@@ -49,6 +49,7 @@ jobs:
          username: ${{ secrets.SSH_USER }}
          key: ${{ secrets.SSH_PRIVATE_KEY }}
          script: |
+             docker login ghcr.io -u ${{ github.actor }} -p ${{ secrets.GITHUB_TOKEN }}
              docker stop react-app || true
              docker rm react-app || true
              docker run -d -p 8080:80 --name "react-app" ghcr.io/${{ github.actor }}/react-app-cicd:${{ github.sha }}
