@@ -32,7 +32,8 @@ jobs:
     - uses: docker/build-push-action@v6.18.0
       with:
         push: true
-        tags: mosama25/react-app-cicd:${{ github.sha }}
+        # tags: mosama25/react-app-cicd:${{ github.sha }}
+        tags: mosama25/react-app-cicd:latest
         context: .
 
   # deploy:
@@ -65,4 +66,4 @@ jobs:
         env:
           RAILWAY_TOKEN: a525ba23-d6c2-4171-9cde-30c1f6c4d141
         run: |
-          railway deploy --image mosama25/my-app:${{ github.sha }} --environment staging --service mohamed
+          railway up --environment staging --service mohamed
