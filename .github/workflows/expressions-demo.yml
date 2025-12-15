@@ -8,8 +8,6 @@ on:
       environment:
         description: Environment name
         required: false
-        default: staging
-
 jobs:
   demo:
     runs-on: ubuntu-latest
