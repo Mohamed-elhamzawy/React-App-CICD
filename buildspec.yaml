@@ -7,7 +7,7 @@ ACCOUNT_ID: "341569028135"
 ECR_REPO_NAME: "react-app-cicd"
 DOCKER_USERNAME: "moelhamzawy1"
 DOCKER_PASSWORD: "dckr_pat_Ml6flqoa8EMxpxyWIfbVjq1tYAg"
-production!
+#production!
 # If using Docker Hub
 # Store in Secrets Manager in
 phases:
