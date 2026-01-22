@@ -2,11 +2,11 @@ version: 0.2
 env:
 variables:
 AWS_REGION: "us-east-1"
-ACCOUNT_ID: "YOUR_ACCOUNT_ID"
+ACCOUNT_ID: "341569028135"
 # Replace with your AWS account ID
 ECR_REPO_NAME: "react-app-cicd"
-DOCKER_USERNAME: "your-dockerhub-username"
-DOCKER_PASSWORD: "your-dockerhub-token"
+DOCKER_USERNAME: "moelhamzawy1"
+DOCKER_PASSWORD: "dckr_pat_Ml6flqoa8EMxpxyWIfbVjq1tYAg"
 production!
 # If using Docker Hub
 # Store in Secrets Manager in
