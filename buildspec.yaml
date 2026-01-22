@@ -42,8 +42,7 @@ commands:
 - docker push $REPO_URL:$IMAGE_TAG
 - echo "Build completed successfully"
 # Create imagedefinitions.json for ECS deployment
-- printf '[{"name":"react-app-cicd-1","imageUri":"%s"}]'
-$REPO_URL:$IMAGE_TAG > imagedefinitions.json
+- printf '[{"name":"react-app-cicd-1","imageUri":"%s"}]'$REPO_URL:$IMAGE_TAG > imagedefinitions.json
 artifacts:
 files: imagedefinitions.json
 cache:
